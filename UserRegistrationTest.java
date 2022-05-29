@@ -9,7 +9,7 @@ public class UserRegistrationTest {
     void givenFirstName_WhenProper_ShouldReturnValid() {
 
         UserRegistration user = new UserRegistration();
-        boolean result = user.firstName("Amol");
+        boolean result = user.firstName("Narsing");
         assertEquals(true, result);
 
     }
@@ -18,7 +18,7 @@ public class UserRegistrationTest {
     void givenLastName_WhenProper_ShouldReturnValid() {
 
         UserRegistration user = new UserRegistration();
-        boolean result = user.lastName("Ghotale");
+        boolean result = user.lastName("Kadam");
         assertEquals(true, result);
 
     }
