@@ -12,6 +12,8 @@ public class EmailTest {
     public boolean expectedResult;
 
 
+    //
+
     void EmailTest(String mail, boolean expectedResult) {
         this.mail = mail;
         this.expectedResult = expectedResult;
