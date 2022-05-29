@@ -3,7 +3,6 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 public class UserRegistration {
     static Scanner scanner = new Scanner(System.in);
 
@@ -160,6 +159,7 @@ public class UserRegistration {
     public boolean ruleFourth (String password){
         Pattern pattern = Pattern.compile("^[a-zA-Z0-9@$!%*#?&]{1,}[a-zA-Z0-9@$!%*#?&]{7,}$");
         return pattern.matcher(password).matches();
+
     }
     public static void main(String[] args) {
 
