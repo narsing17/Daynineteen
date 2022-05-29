@@ -69,7 +69,18 @@ public class UserRegistration {
             System.out.println("First Rule is invalid, Try another.");
         }
     }
+    public void ruleTwo() {
+        System.out.println("Enter characters for second rule: ");
+        String one = scanner.next();
+        Pattern pattern = Pattern.compile("^[A-Z]{1,}[a-zA-Z]{7,}$");
+        Matcher match = pattern.matcher(one);
 
+        if (match.matches()) {
+            System.out.println("Second Rule is valid");
+        } else {
+            System.out.println("Second Rule is invalid, Try another.");
+        }
+    }
     public static void main(String[] args) {
 
         UserRegistration check = new UserRegistration();
@@ -77,6 +88,7 @@ public class UserRegistration {
         //check.lastName();
         //check.email();
         //check.mobileNumber();
-        check.ruleOne();
+       // check.ruleOne();
+        check.ruleTwo();
     }
 }
